@@ -17,3 +17,16 @@ NumPy
 Matplotlib
 Scikit-learn (for classification report)
 Pandas (for data handling, if applicable)
+
+
+Model Architecture
+The model is a feedforward neural network with:
+
+Input layer: Matches the number of features in X.shape[1].
+Hidden layers: Configurable sizes (default: [64, 32, 16]) with ReLU activations.
+Output layer: Single neuron with sigmoid activation for binary classification.
+Regularization: Includes dropout (0.3) and weight decay (1e-5) to prevent overfitting.
+Results
+Training Accuracy: ~0.98
+Test Accuracy: ~0.97–0.98
+Classification
